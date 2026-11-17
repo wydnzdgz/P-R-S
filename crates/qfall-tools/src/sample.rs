@@ -1,0 +1,13 @@
+// Copyright 2023 Jan Niklas Siemer
+//
+// This file is part of qFALL-tools.
+//
+// qFALL-tools is free software: you can redistribute it and/or modify it under
+// the terms of the Mozilla Public License Version 2.0 as published by the
+// Mozilla Foundation. See <https://mozilla.org/en-US/MPL/2.0/>.
+
+//! Contains anything that should be easily samplable for lattice-based
+//! cryptography, which is more complex than sampling from a distribution.
+
+pub mod g_trapdoor;
+pub(crate) mod randomness;

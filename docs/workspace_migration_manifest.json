@@ -1,0 +1,1031 @@
+{
+  "date": "2026-11-17T13:03:53.263187+08:00",
+  "baseline_commit": "851bacc722cfb52f664127c441f5f658729213fd",
+  "checkpoint_archive": ".migration-backups/2026-11-17-before-workspace.tar.gz",
+  "checkpoint_archive_sha256": "3e333822b2d4fdd87340abd1f2a0cca45d39d0e356f15e9752936f2af3abc479",
+  "scope": "source/package migration; algorithm bodies and parameter policy retained",
+  "file_mappings": [
+    {
+      "old_path": "src/compression/lossy_compression_fips203.rs",
+      "new_path": "crates/qfall-tools/src/compression/lossy_compression_fips203.rs",
+      "layer": "A",
+      "before_sha256": "aee603c567a517c9f29b3c8cd23423ffcde0abe92c5802dccaa33473f47c0c11",
+      "after_sha256": "aee603c567a517c9f29b3c8cd23423ffcde0abe92c5802dccaa33473f47c0c11",
+      "byte_identical_move": true,
+      "upstream_sha256": "aee603c567a517c9f29b3c8cd23423ffcde0abe92c5802dccaa33473f47c0c11",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/compression.rs",
+      "new_path": "crates/qfall-tools/src/compression.rs",
+      "layer": "A",
+      "before_sha256": "0cfb6b2c6a519b6ec03867f8b4f20bab86e0f9f598280152943d5ccaa0ccf174",
+      "after_sha256": "0cfb6b2c6a519b6ec03867f8b4f20bab86e0f9f598280152943d5ccaa0ccf174",
+      "byte_identical_move": true,
+      "upstream_sha256": "0cfb6b2c6a519b6ec03867f8b4f20bab86e0f9f598280152943d5ccaa0ccf174",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/lib.rs",
+      "new_path": "crates/qfall-tools/src/lib.rs",
+      "layer": "A",
+      "before_sha256": "aabe16d09bdcc27cbe32f542fca2132eeb5340ed9f30e3337b3db7b2f88cbae3",
+      "after_sha256": "aabe16d09bdcc27cbe32f542fca2132eeb5340ed9f30e3337b3db7b2f88cbae3",
+      "byte_identical_move": true,
+      "upstream_sha256": "aabe16d09bdcc27cbe32f542fca2132eeb5340ed9f30e3337b3db7b2f88cbae3",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/primitive/plt/acceptance_tests.rs",
+      "new_path": "crates/plt/src/acceptance_tests.rs",
+      "layer": "B",
+      "before_sha256": "5ac329ecaecb51f629fd0bf659060631c23758e0486892755a3c5e4cf31f834a",
+      "after_sha256": "5ac329ecaecb51f629fd0bf659060631c23758e0486892755a3c5e4cf31f834a",
+      "byte_identical_move": true,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "src/primitive/plt/assessment.rs",
+      "new_path": "crates/plt/src/assessment.rs",
+      "layer": "B",
+      "before_sha256": "df1cad03b5e77b5d265968a50dfdf00a8769d0fc354cb1b42761bf74e731f26d",
+      "after_sha256": "df1cad03b5e77b5d265968a50dfdf00a8769d0fc354cb1b42761bf74e731f26d",
+      "byte_identical_move": true,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "src/primitive/plt/mp12_adapter.rs",
+      "new_path": "crates/plt/src/mp12_adapter.rs",
+      "layer": "B",
+      "before_sha256": "f73d8b8788a08354e12f12db510b7ea29fc4b551e776f28574ba9326800930ef",
+      "after_sha256": "aacfe8b7944b5d2662fc91a2d528df4c6e6cbcafb2b2925696a3fb508cff59f1",
+      "byte_identical_move": false,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "src/primitive/plt/params.rs",
+      "new_path": "crates/plt/src/params.rs",
+      "layer": "B",
+      "before_sha256": "7492572f4cb29a4e39619412996996afb1735f57e12c9faf21ac3bb767b333d4",
+      "after_sha256": "7492572f4cb29a4e39619412996996afb1735f57e12c9faf21ac3bb767b333d4",
+      "byte_identical_move": true,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "src/primitive/plt/vandermonde.rs",
+      "new_path": "crates/plt/src/vandermonde.rs",
+      "layer": "B",
+      "before_sha256": "b51484657a242e4b4e627f43474170dd547ce400766a01c67b3fb440ae01b446",
+      "after_sha256": "b51484657a242e4b4e627f43474170dd547ce400766a01c67b3fb440ae01b446",
+      "byte_identical_move": true,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "src/primitive/plt.rs",
+      "new_path": "crates/plt/src/lib.rs",
+      "layer": "B",
+      "before_sha256": "0c647060529761dbe6fc60e475b860e68aa44ff6f4dd08f01afe2eacaddfa121",
+      "after_sha256": "7b16c0fa41bcbfb453f3867ffbbdc96aab473d4b06cd74fddac613a92f50ac1d",
+      "byte_identical_move": false,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "src/primitive/psf/gpv.rs",
+      "new_path": "crates/qfall-tools/src/primitive/psf/gpv.rs",
+      "layer": "A",
+      "before_sha256": "2e9059c1d3d147ec024acadaf0d8c0e57f44c00fb9ed18ba981fe74ce4acf9af",
+      "after_sha256": "2e9059c1d3d147ec024acadaf0d8c0e57f44c00fb9ed18ba981fe74ce4acf9af",
+      "byte_identical_move": true,
+      "upstream_sha256": "2e9059c1d3d147ec024acadaf0d8c0e57f44c00fb9ed18ba981fe74ce4acf9af",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/primitive/psf/gpv_ring.rs",
+      "new_path": "crates/qfall-tools/src/primitive/psf/gpv_ring.rs",
+      "layer": "A",
+      "before_sha256": "c9ba64a5a504f010058d7337c6e40d396d5d64d0b3a9cac0412ac93c85a0431c",
+      "after_sha256": "c9ba64a5a504f010058d7337c6e40d396d5d64d0b3a9cac0412ac93c85a0431c",
+      "byte_identical_move": true,
+      "upstream_sha256": "c9ba64a5a504f010058d7337c6e40d396d5d64d0b3a9cac0412ac93c85a0431c",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/primitive/psf/mp_perturbation/checked.rs",
+      "new_path": "crates/qfall-tools/src/primitive/psf/mp_perturbation/checked.rs",
+      "layer": "A",
+      "before_sha256": "87f6f739789aa78bac7f1794d33f74e4bdfe4490b587a7668db8b60b6b8e3066",
+      "after_sha256": "87f6f739789aa78bac7f1794d33f74e4bdfe4490b587a7668db8b60b6b8e3066",
+      "byte_identical_move": true,
+      "upstream_status": "new_baseline_maintenance_file"
+    },
+    {
+      "old_path": "src/primitive/psf/mp_perturbation.rs",
+      "new_path": "crates/qfall-tools/src/primitive/psf/mp_perturbation.rs",
+      "layer": "A",
+      "before_sha256": "68670e7def05a04683a9b6a88e2bfe29c9c2b466cf03804857ab32a4bf29d204",
+      "after_sha256": "68670e7def05a04683a9b6a88e2bfe29c9c2b466cf03804857ab32a4bf29d204",
+      "byte_identical_move": true,
+      "upstream_sha256": "df5a79b3bdefbb4d3dba04a6fe2280aa69506376b7eddfc44c902eb9a54561a4",
+      "before_equals_upstream": false,
+      "after_equals_upstream": false
+    },
+    {
+      "old_path": "src/primitive/psf.rs",
+      "new_path": "crates/qfall-tools/src/primitive/psf.rs",
+      "layer": "A",
+      "before_sha256": "8f70a3e679d540e30fd95a3ab039e376d19cf221308510e7d31b237b7278b3a9",
+      "after_sha256": "8f70a3e679d540e30fd95a3ab039e376d19cf221308510e7d31b237b7278b3a9",
+      "byte_identical_move": true,
+      "upstream_sha256": "8f70a3e679d540e30fd95a3ab039e376d19cf221308510e7d31b237b7278b3a9",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/primitive.rs",
+      "new_path": "crates/qfall-tools/src/primitive.rs",
+      "layer": "A",
+      "before_sha256": "f12c0fedf2441045f12e648aea0973605290aee2cad1dfd3022d985e4eeb8c41",
+      "after_sha256": "c0fd77cf03a0bc9d070c3c2de84e14e3256b9a91016fd9b37ca44378acd09705",
+      "byte_identical_move": false,
+      "upstream_sha256": "c0fd77cf03a0bc9d070c3c2de84e14e3256b9a91016fd9b37ca44378acd09705",
+      "before_equals_upstream": false,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/sample/g_trapdoor/gadget_classical.rs",
+      "new_path": "crates/qfall-tools/src/sample/g_trapdoor/gadget_classical.rs",
+      "layer": "A",
+      "before_sha256": "83a43302da7f123039c5fa0540f87e19257b2b42a7ec5189253614b694d954fa",
+      "after_sha256": "83a43302da7f123039c5fa0540f87e19257b2b42a7ec5189253614b694d954fa",
+      "byte_identical_move": true,
+      "upstream_sha256": "2298180e739164548f1acefd43cbf17aa3f78817428df284134c8b4fce9442af",
+      "before_equals_upstream": false,
+      "after_equals_upstream": false
+    },
+    {
+      "old_path": "src/sample/g_trapdoor/gadget_default.rs",
+      "new_path": "crates/qfall-tools/src/sample/g_trapdoor/gadget_default.rs",
+      "layer": "A",
+      "before_sha256": "a311c99b618f26262212677654814b1ecf1859a95ec183c376a5425a5f0cae52",
+      "after_sha256": "a311c99b618f26262212677654814b1ecf1859a95ec183c376a5425a5f0cae52",
+      "byte_identical_move": true,
+      "upstream_sha256": "a311c99b618f26262212677654814b1ecf1859a95ec183c376a5425a5f0cae52",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/sample/g_trapdoor/gadget_parameters.rs",
+      "new_path": "crates/qfall-tools/src/sample/g_trapdoor/gadget_parameters.rs",
+      "layer": "A",
+      "before_sha256": "8b681eb7d2f406b67f345a3f2d78ed106005e25e20bcbca241862c6ca44310d2",
+      "after_sha256": "8b681eb7d2f406b67f345a3f2d78ed106005e25e20bcbca241862c6ca44310d2",
+      "byte_identical_move": true,
+      "upstream_sha256": "8b681eb7d2f406b67f345a3f2d78ed106005e25e20bcbca241862c6ca44310d2",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/sample/g_trapdoor/gadget_ring.rs",
+      "new_path": "crates/qfall-tools/src/sample/g_trapdoor/gadget_ring.rs",
+      "layer": "A",
+      "before_sha256": "0cea746da6b7295e7d2edeb74051413ad55c88e8aa2ba3cdb1a3a2eb33efafc0",
+      "after_sha256": "0cea746da6b7295e7d2edeb74051413ad55c88e8aa2ba3cdb1a3a2eb33efafc0",
+      "byte_identical_move": true,
+      "upstream_sha256": "0cea746da6b7295e7d2edeb74051413ad55c88e8aa2ba3cdb1a3a2eb33efafc0",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/sample/g_trapdoor/short_basis_classical.rs",
+      "new_path": "crates/qfall-tools/src/sample/g_trapdoor/short_basis_classical.rs",
+      "layer": "A",
+      "before_sha256": "ddeb45eab8b77f274a184f3337bc42d6ac6d3c85a67431e2e1a303de8d0b34ac",
+      "after_sha256": "ddeb45eab8b77f274a184f3337bc42d6ac6d3c85a67431e2e1a303de8d0b34ac",
+      "byte_identical_move": true,
+      "upstream_sha256": "ddeb45eab8b77f274a184f3337bc42d6ac6d3c85a67431e2e1a303de8d0b34ac",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/sample/g_trapdoor/short_basis_ring.rs",
+      "new_path": "crates/qfall-tools/src/sample/g_trapdoor/short_basis_ring.rs",
+      "layer": "A",
+      "before_sha256": "e7fcbc2d78933450caca95f3519ef9f72bd9a8d96673018742bd4dc8a87fe231",
+      "after_sha256": "e7fcbc2d78933450caca95f3519ef9f72bd9a8d96673018742bd4dc8a87fe231",
+      "byte_identical_move": true,
+      "upstream_sha256": "e7fcbc2d78933450caca95f3519ef9f72bd9a8d96673018742bd4dc8a87fe231",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/sample/g_trapdoor/trapdoor_distribution.rs",
+      "new_path": "crates/qfall-tools/src/sample/g_trapdoor/trapdoor_distribution.rs",
+      "layer": "A",
+      "before_sha256": "5d40d116dcdd16f9e4130786ede84c0260b9125dcacf19bfdc0194ad36b43915",
+      "after_sha256": "5d40d116dcdd16f9e4130786ede84c0260b9125dcacf19bfdc0194ad36b43915",
+      "byte_identical_move": true,
+      "upstream_sha256": "baea7e5a961c0614c7c73431557fb3dee862b8730309d8a916725f62eab5e473",
+      "before_equals_upstream": false,
+      "after_equals_upstream": false
+    },
+    {
+      "old_path": "src/sample/g_trapdoor.rs",
+      "new_path": "crates/qfall-tools/src/sample/g_trapdoor.rs",
+      "layer": "A",
+      "before_sha256": "391f994fd457be621dd762f53d6d9279171531cc4129d6b3c4e2c5d114becf14",
+      "after_sha256": "391f994fd457be621dd762f53d6d9279171531cc4129d6b3c4e2c5d114becf14",
+      "byte_identical_move": true,
+      "upstream_sha256": "391f994fd457be621dd762f53d6d9279171531cc4129d6b3c4e2c5d114becf14",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/sample/randomness.rs",
+      "new_path": "crates/qfall-tools/src/sample/randomness.rs",
+      "layer": "A",
+      "before_sha256": "6280a85a73ba63958d1f2405223b590ced3596cb1afa207e62208a4bd6d3981a",
+      "after_sha256": "6280a85a73ba63958d1f2405223b590ced3596cb1afa207e62208a4bd6d3981a",
+      "byte_identical_move": true,
+      "upstream_status": "new_baseline_maintenance_file"
+    },
+    {
+      "old_path": "src/sample.rs",
+      "new_path": "crates/qfall-tools/src/sample.rs",
+      "layer": "A",
+      "before_sha256": "48c3e5b391bec16e683204d6d9497c04d53bbe4d74a74b5cadefbe85d7d0ac74",
+      "after_sha256": "48c3e5b391bec16e683204d6d9497c04d53bbe4d74a74b5cadefbe85d7d0ac74",
+      "byte_identical_move": true,
+      "upstream_sha256": "2611be224a34b6bbc603d8ccad0cd773dbdc68c0d9af915240444da5e133c89b",
+      "before_equals_upstream": false,
+      "after_equals_upstream": false
+    },
+    {
+      "old_path": "src/utils/common_encodings.rs",
+      "new_path": "crates/qfall-tools/src/utils/common_encodings.rs",
+      "layer": "A",
+      "before_sha256": "546cbb669fc1bc3ec1d946f532a9f47094e24f549f8ace30a982556c9bdc80c2",
+      "after_sha256": "546cbb669fc1bc3ec1d946f532a9f47094e24f549f8ace30a982556c9bdc80c2",
+      "byte_identical_move": true,
+      "upstream_sha256": "546cbb669fc1bc3ec1d946f532a9f47094e24f549f8ace30a982556c9bdc80c2",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/utils/common_moduli.rs",
+      "new_path": "crates/qfall-tools/src/utils/common_moduli.rs",
+      "layer": "A",
+      "before_sha256": "a45088efb8e218b70b294273b617808763a3ff2b7e74f964e6695be462213590",
+      "after_sha256": "a45088efb8e218b70b294273b617808763a3ff2b7e74f964e6695be462213590",
+      "byte_identical_move": true,
+      "upstream_sha256": "a45088efb8e218b70b294273b617808763a3ff2b7e74f964e6695be462213590",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/utils/rotation_matrix.rs",
+      "new_path": "crates/qfall-tools/src/utils/rotation_matrix.rs",
+      "layer": "A",
+      "before_sha256": "79378943c1c5ce633f38c8fb218cf64477744fc93b0a7488ac21b8872f40b4e1",
+      "after_sha256": "79378943c1c5ce633f38c8fb218cf64477744fc93b0a7488ac21b8872f40b4e1",
+      "byte_identical_move": true,
+      "upstream_sha256": "79378943c1c5ce633f38c8fb218cf64477744fc93b0a7488ac21b8872f40b4e1",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "src/utils.rs",
+      "new_path": "crates/qfall-tools/src/utils.rs",
+      "layer": "A",
+      "before_sha256": "125af967fd6c55bebdc638b0e38c1e49ba164606428e9e2a0b1acb8a0fe99dae",
+      "after_sha256": "125af967fd6c55bebdc638b0e38c1e49ba164606428e9e2a0b1acb8a0fe99dae",
+      "byte_identical_move": true,
+      "upstream_sha256": "125af967fd6c55bebdc638b0e38c1e49ba164606428e9e2a0b1acb8a0fe99dae",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "benches/README.md",
+      "new_path": "crates/qfall-tools/benches/README.md",
+      "layer": "A",
+      "before_sha256": "fd1b0d286feeb799ea24db739345f8df2c12f95b89ea7ceeb40bf6d9bcdd202b",
+      "after_sha256": "6fce6f22d136c77abd3a8297a6c03c98cfef23c594ba1d85dbe3d588b855bd55",
+      "byte_identical_move": false,
+      "upstream_sha256": "fd1b0d286feeb799ea24db739345f8df2c12f95b89ea7ceeb40bf6d9bcdd202b",
+      "before_equals_upstream": true,
+      "after_equals_upstream": false
+    },
+    {
+      "old_path": "benches/benchmarks.rs",
+      "new_path": "crates/qfall-tools/benches/benchmarks.rs",
+      "layer": "A",
+      "before_sha256": "9e6dc8e2e62d525ed1e2a5d78e46a42e630d73946afbefe6a5be9c8f84b989a9",
+      "after_sha256": "fc1da0b9d0960b126bd6dfb08757d7650f288878699734ef12257c4db81edf77",
+      "byte_identical_move": false,
+      "upstream_sha256": "fc1da0b9d0960b126bd6dfb08757d7650f288878699734ef12257c4db81edf77",
+      "before_equals_upstream": false,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "benches/plt.rs",
+      "new_path": "crates/plt/benches/plt.rs",
+      "layer": "B",
+      "before_sha256": "e53d164519f8a079132c974ab4dc87bc39c588857c0461baaa3fc59bc512594a",
+      "after_sha256": "fddd6f7b23f335a16dbf3090865e36daa5c5e1810f0276bda635694cc9228079",
+      "byte_identical_move": false,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "benches/psf.rs",
+      "new_path": "crates/qfall-tools/benches/psf.rs",
+      "layer": "A",
+      "before_sha256": "50c8e1465d63218d194820bf970b83e257f439dec263d66b2ce7edf167f4c15a",
+      "after_sha256": "50c8e1465d63218d194820bf970b83e257f439dec263d66b2ce7edf167f4c15a",
+      "byte_identical_move": true,
+      "upstream_sha256": "50c8e1465d63218d194820bf970b83e257f439dec263d66b2ce7edf167f4c15a",
+      "before_equals_upstream": true,
+      "after_equals_upstream": true
+    },
+    {
+      "old_path": "examples/plt.rs",
+      "new_path": "crates/plt/examples/plt.rs",
+      "layer": "B",
+      "before_sha256": "503cd02321f2b0257c1de9b269cef1e64bd194ce5421833c1350f3be7f10098f",
+      "after_sha256": "f4a49d35f12a591f7e16d0d27ff79540d37d1746246e9cb03f7ee3441fb7d31f",
+      "byte_identical_move": false,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "examples/plt_2_of_3.rs",
+      "new_path": "crates/plt/examples/plt_2_of_3.rs",
+      "layer": "B",
+      "before_sha256": "821560563ce89f89790efb4d5fd1d17bd1a2a6e2d835fc1b48ae8a28719460c4",
+      "after_sha256": "821560563ce89f89790efb4d5fd1d17bd1a2a6e2d835fc1b48ae8a28719460c4",
+      "byte_identical_move": true,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "examples/plt_acceptance.rs",
+      "new_path": "crates/plt/examples/plt_acceptance.rs",
+      "layer": "B",
+      "before_sha256": "81d5afcc447efa9bc56cbc642f9a14bb1de48299584aa6b33665525642baeae9",
+      "after_sha256": "5684c9684cc1abdbf720ccd7c930a1fbf064dded267dc6f0acdbb932590b4909",
+      "byte_identical_move": false,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "examples/plt_parameter_probe.rs",
+      "new_path": "crates/plt/examples/plt_parameter_probe.rs",
+      "layer": "B",
+      "before_sha256": "f7f9c7b0d43f570c393b6a90f13b1a2632b6e220a0fe8e00c1fd1192746d3b86",
+      "after_sha256": "c5e31b0b4ae58b68c9f4f62803c5f811267945a89286985d603c5ce103219347",
+      "byte_identical_move": false,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "examples/plt_public_lattice_screen.rs",
+      "new_path": "crates/plt/examples/plt_public_lattice_screen.rs",
+      "layer": "B",
+      "before_sha256": "b8f79e923f2cb2be2a7eb835ffd20881e6db7b4f493d886a8e4ccb0c3da4220d",
+      "after_sha256": "b8f79e923f2cb2be2a7eb835ffd20881e6db7b4f493d886a8e4ccb0c3da4220d",
+      "byte_identical_move": true,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "examples/plt_sampling_audit.rs",
+      "new_path": "crates/plt/examples/plt_sampling_audit.rs",
+      "layer": "B",
+      "before_sha256": "12044e79088cf4e132ade5e155ecbfeb53868f4d62e4de6b7b19b8bc72ecdb67",
+      "after_sha256": "27b89d20f676b8950961c7a62c407d936aefdfa31f1c5e49bed650cf9632a75d",
+      "byte_identical_move": false,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "examples/support/public_solution.rs",
+      "new_path": "crates/plt/examples/support/public_solution.rs",
+      "layer": "B",
+      "before_sha256": "97fd74b855021430fff261bdb5195965eab44987310d48946d64b908f18d42bb",
+      "after_sha256": "97fd74b855021430fff261bdb5195965eab44987310d48946d64b908f18d42bb",
+      "byte_identical_move": true,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "examples/support/sampling_reference.rs",
+      "new_path": "crates/plt/examples/support/sampling_reference.rs",
+      "layer": "B",
+      "before_sha256": "f0fd25fcbf0197d66153a3fe09836dee8b60eee9395076e3c72aa9159573b60e",
+      "after_sha256": "f0fd25fcbf0197d66153a3fe09836dee8b60eee9395076e3c72aa9159573b60e",
+      "byte_identical_move": true,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "tests/plt_correctness.rs",
+      "new_path": "crates/plt/tests/plt_correctness.rs",
+      "layer": "B",
+      "before_sha256": "4c0c406690b2711868f700ce153f88d904f6c566cd82a9861a95d3dd03235c38",
+      "after_sha256": "fcce5dd439af002d402d6a340324b07b55d2709e48f137e9e1793aeb541f105c",
+      "byte_identical_move": false,
+      "upstream_status": "PLT_addition"
+    },
+    {
+      "old_path": "tests/plt_sampling.rs",
+      "new_path": "crates/plt/tests/plt_sampling.rs",
+      "layer": "B",
+      "before_sha256": "58abdbcf2bf62818a1a99db98a7f6f2b0713bcb5c5135c3da16f48321144e281",
+      "after_sha256": "8eed3894eff5e48937af733739fa306e10eae9c418c7c258409aa612b26441e1",
+      "byte_identical_move": false,
+      "upstream_status": "PLT_addition"
+    }
+  ],
+  "historical_artifacts_sha256": {
+    "docs/plt_B_dependency_audit.json": "58d74f488c36f6f5cbb9c50eaa88aa1d7cb875bd75288bead5fe7b7d10d8982f",
+    "docs/plt_acceptance_A_results.json": "bbd2194677bd1b6b5190468f1ed06c330c7dd06b0887d4da0bc559ab4d6ec6a5",
+    "docs/plt_parameter_exploration_results.json": "656a197a92b258495d6c2d94166b95ee7c685d4fef225c7da6689696a899874c",
+    "docs/plt_public_lattice_screen_results.json": "60bd73f6915e100bc581414959c97b3652f687fe906fd351abfa590ee84497c0",
+    "docs/plt_public_pair_screen_results.json": "3d6c034e26f82bb639ab3839c003c61c264284f49b87f218be676fc905262e25",
+    "docs/plt_sampling_B_results.json": "72f03d79a8b90ab4193bfee3f59d7e0a265a7c265ad4400c665219dc5e93663c"
+  },
+  "external_dependency_versions_before": [
+    [
+      "aho-corasick",
+      "1.1.5",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "alloca",
+      "0.4.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "anes",
+      "0.1.6",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "anstyle",
+      "1.0.14",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "anyhow",
+      "1.0.104",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "autocfg",
+      "1.5.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "block-buffer",
+      "0.12.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "bumpalo",
+      "3.20.3",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "cast",
+      "0.3.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "cc",
+      "1.11.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "cfg-if",
+      "1.0.5",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "chacha20",
+      "0.10.2",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "ciborium",
+      "0.2.2",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "ciborium-io",
+      "0.2.2",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "ciborium-ll",
+      "0.2.2",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "clap",
+      "4.6.7",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "clap_builder",
+      "4.6.7",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "clap_lex",
+      "1.1.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "const-oid",
+      "0.10.3",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "convert_case",
+      "0.10.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "cpufeatures",
+      "0.3.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "criterion",
+      "0.8.2",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "criterion-plot",
+      "0.8.2",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "crossbeam-deque",
+      "0.8.8",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "crossbeam-epoch",
+      "0.9.21",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "crossbeam-utils",
+      "0.8.23",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "crunchy",
+      "0.2.4",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "crypto-common",
+      "0.2.2",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "derive_more",
+      "2.1.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "derive_more-impl",
+      "2.1.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "digest",
+      "0.11.3",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "either",
+      "1.19.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "erased-serde",
+      "0.4.11",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "find-msvc-tools",
+      "0.1.15",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "flint3-sys",
+      "3.6.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "futures-core",
+      "0.3.34",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "futures-task",
+      "0.3.34",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "futures-util",
+      "0.3.34",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "getrandom",
+      "0.4.3",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "gmp-mpfr-sys",
+      "1.7.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "half",
+      "2.7.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "hybrid-array",
+      "0.4.15",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "inventory",
+      "0.3.25",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "itertools",
+      "0.13.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "itoa",
+      "1.0.19",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "js-sys",
+      "0.3.107",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "lazy_static",
+      "1.5.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "libc",
+      "0.2.191",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "libm",
+      "0.2.16",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "memchr",
+      "2.8.3",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "num-traits",
+      "0.2.19",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "once_cell",
+      "1.21.4",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "oorandom",
+      "11.1.5",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "page_size",
+      "0.6.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "paste",
+      "1.0.15",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "pin-project-lite",
+      "0.2.17",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "plotters",
+      "0.3.7",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "plotters-backend",
+      "0.3.7",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "plotters-svg",
+      "0.3.7",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "probability",
+      "0.20.3",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "proc-macro2",
+      "1.0.107",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "qfall-math",
+      "0.2.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "quote",
+      "1.0.47",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "r-efi",
+      "6.0.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "rand",
+      "0.10.3",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "rand_core",
+      "0.10.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "rand_distr",
+      "0.6.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "random",
+      "0.13.2",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "rayon",
+      "1.12.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "rayon-core",
+      "1.13.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "regex",
+      "1.13.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "regex-automata",
+      "0.4.18",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "regex-syntax",
+      "0.8.11",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "rustc_version",
+      "0.4.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "rustversion",
+      "1.0.23",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "same-file",
+      "1.0.6",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "semver",
+      "1.0.28",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "serde",
+      "1.0.229",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "serde_core",
+      "1.0.229",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "serde_derive",
+      "1.0.229",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "serde_json",
+      "1.0.154",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "sha2",
+      "0.11.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "shlex",
+      "2.0.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "slab",
+      "0.4.12",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "special",
+      "0.10.3",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "string-builder",
+      "0.2.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "syn",
+      "2.0.119",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "syn",
+      "3.0.10",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "thiserror",
+      "2.0.21",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "thiserror-impl",
+      "2.0.21",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "tinytemplate",
+      "1.2.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "typeid",
+      "1.0.3",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "typenum",
+      "1.20.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "typetag",
+      "0.2.23",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "typetag-impl",
+      "0.2.23",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "unicode-ident",
+      "1.0.27",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "unicode-segmentation",
+      "1.13.3",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "unicode-xid",
+      "0.2.6",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "walkdir",
+      "2.5.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "wasm-bindgen",
+      "0.2.130",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "wasm-bindgen-macro",
+      "0.2.130",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "wasm-bindgen-macro-support",
+      "0.2.130",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "wasm-bindgen-shared",
+      "0.2.130",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "web-sys",
+      "0.3.107",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "winapi",
+      "0.3.9",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "winapi-i686-pc-windows-gnu",
+      "0.4.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "winapi-util",
+      "0.1.11",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "winapi-x86_64-pc-windows-gnu",
+      "0.4.0",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "windows-link",
+      "0.2.1",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "windows-sys",
+      "0.61.2",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "zerocopy",
+      "0.8.63",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "zerocopy-derive",
+      "0.8.63",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ],
+    [
+      "zmij",
+      "1.0.23",
+      "registry+https://github.com/rust-lang/crates.io-index"
+    ]
+  ],
+  "migration_sources_sha256": {
+    ".github/workflows/main.yml": "2a5e6440cc5d6f82789ef8407fd2d5ef91d24525e7902c5a91546a2fbab42975",
+    ".github/workflows/pull_request.yml": "eef192969b00d78b0588e203c5c8f98ec71e97096d914beac455bfcfefd51733",
+    ".github/workflows/push.yml": "bacd5ea14ae324f59e5a00af71a51a45921106b39d360758c873a551a10f3ac3",
+    "Cargo.lock": "1a0d33dc5cadd0a50de87000f9b31ffaef2179f5c249f495f3f4ff75eeaec962",
+    "Cargo.toml": "2682269e04a443e1d13de49998d3146df320ac68c4f32e9e778a6e6b309a1257",
+    "crates/plt/Cargo.toml": "eb499234a34b36128344c54f3ef29c844b8d036d9345d8774d5cb752baaa97ec",
+    "crates/plt/benches/benchmarks.rs": "2b94ed557f6df3f649c87e44253c912a8c5654e68a268dbe74a66d1db45351f9",
+    "crates/qfall-tools/Cargo.toml": "a3c57e3fa70c4a48302c37e2381e1bc36a659a5679adb0f059d4804324fd1ea4",
+    "scripts/sweep_plt_parameters.py": "ebb281f83f70bd44a34c99906a588584d4d11d8115f350910ae06960ea76fb24",
+    "scripts/verify_workspace_layout.py": "d524cdf1d39f411e04696ae5af23da03a889a0e2eb3e73ea16f04eaeeeffc0c4"
+  }
+}

@@ -1,0 +1,105 @@
+name: Pipeline
+# consistency regarding formatting and idiomatic Rust
+
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - "**"
+
+permissions:
+  contents: read
+
+# a new run for the same branch or pull request cancels the outdated run
+concurrency:
+  group: ${{ github.workflow_ref }}
+  cancel-in-progress: true
+
+env:
+  CARGO_TERM_COLOR: always
+  RUSTDOCFLAGS: "-Dwarnings"
+
+jobs:
+  pipeline:
+    name: Pipeline - code coverage + dependency check
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Setup dtolnay/rust-toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
+
+      # The native FLINT library is compiled for the CPU of the runner it is built on.
+      # Hence, the cache may only be reused on runners with the same CPU (model and features).
+      - name: Determine CPU of the runner
+        id: cpu
+        run: |
+          grep -m1 'model name' /proc/cpuinfo
+          echo "hash=$({ grep -m1 'model name' /proc/cpuinfo; grep -m1 '^flags' /proc/cpuinfo; } | sha256sum | cut -c1-16)" >> "$GITHUB_OUTPUT"
+
+      # load project cache to reduce compilation time, whose key additionally covers
+      # the Rust version, the Cargo.toml files, and build-relevant environment variables
+      - name: Setup project cache
+        uses: Swatinem/rust-cache@v2
+        with:
+          key: ${{ steps.cpu.outputs.hash }}
+
+      - name: Set environment variables
+        run: |
+          echo "PROJECT_NAME=$(cargo metadata --locked --no-deps --format-version 1 | jq -r '.packages[] | select(.name == "plt") | .name')" >> $GITHUB_ENV
+          echo "PROJECT_VERSION=$(cargo metadata --locked --no-deps --format-version 1 | jq -r '.packages[] | select(.name == "plt") | .version')" >> $GITHUB_ENV
+
+      - name: Build
+        run: cargo build --locked --workspace
+      - name: Generate docs
+        run: cargo doc --locked --workspace --no-deps
+      - name: Run doc tests # Unit tests are run by tarpaulin
+        run: cargo test --locked --workspace --doc --verbose
+
+      - name: Install cargo-tarpaulin
+        uses: baptiste0928/cargo-install@v3
+        with:
+          crate: cargo-tarpaulin
+      - name: Calculate test coverage
+        run: cargo tarpaulin --locked --workspace --out Html
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{ env.PROJECT_NAME }}-code_coverage_report-v${{ env.PROJECT_VERSION }}
+          path: tarpaulin-report.html
+
+      - name: Example tests and workspace checks
+        run: |
+          cargo test --locked --workspace --examples
+          cargo bench --locked --workspace --no-run
+          python3 scripts/verify_workspace_layout.py
+          python3 scripts/check_repository_files.py --history
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+
+      # Lints: Clippy and Fmt
+      - name: Clippy
+        run: cargo clippy --locked --workspace --all-targets -- -D warnings
+      - name: Format
+        run: cargo fmt --all -- --check
+
+      # Cargo check for security issues
+      - name: Install cargo-audit
+        uses: baptiste0928/cargo-install@v3
+        with:
+          crate: cargo-audit
+      - name: Security audit
+        run: cargo audit
+
+      # Check for outdated dependencies
+      - name: Install cargo-outdated
+        uses: dtolnay/install@cargo-outdated
+      - name: Outdated dependencies
+        run: cargo outdated --exit-code 1

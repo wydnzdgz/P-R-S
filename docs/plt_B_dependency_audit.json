@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-13",
+  "scope": "source review for selected built-in ternary MP12 path; no claims for arbitrary custom distributions",
+  "reviewed_source_sha256": {
+    "qfall-math-0.2.1": {
+      "src/utils/sample/uniform.rs": "8d1c3d7a6f6f5b061070a2f77cb59f19cadc5f0886c4299e76b98f1361501db5",
+      "src/utils/sample/discrete_gauss.rs": "42c93387ccca06b508b5bb8525d23f9fc69951d44907620c210ea47aff9d61c8",
+      "src/macros/seeded.rs": "82797483628588833e77b09607611a0ae719fa0e4d639eb465d33decdb13ccc8",
+      "src/rational/mat_q/sample/gauss.rs": "5a30a495d5a3aa808468f4a47ad16dd4d8c86b141eb5d503ff812783895e46ca",
+      "src/rational/mat_q/rounding.rs": "6a8fb9e94aeb7b0d59495437ffb3d50202ca57a46b28da015e8adf513593409d",
+      "src/integer/mat_z/sample/uniform.rs": "26a158b7ef81ce4365a9daa251e1c4860857907eb428fadb3142074c6d4286b8",
+      "src/integer_mod_q/mat_zq/sample/uniform.rs": "0b42d83d75cb0e45c72b44098ba6af8b3123a6ff1bea15758f30b7e3cfb06a0f"
+    },
+    "random-0.13.2": {
+      "src/lib.rs": "8eabd4f85b1ad723e148d83034acd292f00801040e8bc9d24401fe56ab5488aa"
+    },
+    "rand-0.10.3": {
+      "src/rngs/std.rs": "2e56683cda7a7e95a1e808a85c92c99e98f5be6af1c16c2373f20bf9e0e5a6c6"
+    },
+    "rand_distr-0.6.0": {
+      "src/normal.rs": "59ded5756c849df6d43f4c85f52023bcbc900711af6b7e9c993d7186288e4c74"
+    }
+  }
+}

@@ -1,0 +1,617 @@
+{
+  "failure_policy": "abort the failed operation; count failures and skipped trials; no internal retries",
+  "independent_keysets_per_configuration": 3,
+  "passed": true,
+  "reports": [
+    {
+      "counts": {
+        "errors_by_phase_and_reason": {},
+        "issuance_attempts": 9,
+        "norm_failures": 0,
+        "partial_sampling_attempts": 6000,
+        "reconstruction_attempts": 3000,
+        "reconstruction_failures": 0,
+        "reconstruction_successes": 3000,
+        "setup_attempts": 3,
+        "skipped_reconstructions": 0
+      },
+      "key_profiles": [
+        {
+          "auxiliary": {
+            "columns": 10,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "256"
+            },
+            "m_bar": 1,
+            "rounding_parameter": 4,
+            "rows": 1
+          },
+          "keyset": 0,
+          "master": {
+            "columns": 40,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "256"
+            },
+            "m_bar": 22,
+            "rounding_parameter": 4,
+            "rows": 2
+          },
+          "sigma_squared": {
+            "value": "18874739968"
+          }
+        },
+        {
+          "auxiliary": {
+            "columns": 10,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "256"
+            },
+            "m_bar": 1,
+            "rounding_parameter": 4,
+            "rows": 1
+          },
+          "keyset": 1,
+          "master": {
+            "columns": 40,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "256"
+            },
+            "m_bar": 22,
+            "rounding_parameter": 4,
+            "rows": 2
+          },
+          "sigma_squared": {
+            "value": "21856349952"
+          }
+        },
+        {
+          "auxiliary": {
+            "columns": 10,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "256"
+            },
+            "m_bar": 1,
+            "rounding_parameter": 4,
+            "rows": 1
+          },
+          "keyset": 2,
+          "master": {
+            "columns": 40,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "256"
+            },
+            "m_bar": 22,
+            "rounding_parameter": 4,
+            "rows": 2
+          },
+          "sigma_squared": {
+            "value": "22227618240"
+          }
+        }
+      ],
+      "parameters": {
+        "k": 3,
+        "m": 10,
+        "n": 1,
+        "q": 257,
+        "t": 2
+      },
+      "passed": true,
+      "recovery_set_attempts": {
+        "[0, 1]": 1002,
+        "[0, 2]": 999,
+        "[1, 2]": 999
+      }
+    },
+    {
+      "counts": {
+        "errors_by_phase_and_reason": {},
+        "issuance_attempts": 15,
+        "norm_failures": 0,
+        "partial_sampling_attempts": 9000,
+        "reconstruction_attempts": 3000,
+        "reconstruction_failures": 0,
+        "reconstruction_successes": 3000,
+        "setup_attempts": 3,
+        "skipped_reconstructions": 0
+      },
+      "key_profiles": [
+        {
+          "auxiliary": {
+            "columns": 10,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "256"
+            },
+            "m_bar": 1,
+            "rounding_parameter": 4,
+            "rows": 1
+          },
+          "keyset": 0,
+          "master": {
+            "columns": 60,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "512"
+            },
+            "m_bar": 33,
+            "rounding_parameter": 4,
+            "rows": 3
+          },
+          "sigma_squared": {
+            "value": "136125362816"
+          }
+        },
+        {
+          "auxiliary": {
+            "columns": 10,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "256"
+            },
+            "m_bar": 1,
+            "rounding_parameter": 4,
+            "rows": 1
+          },
+          "keyset": 1,
+          "master": {
+            "columns": 60,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "512"
+            },
+            "m_bar": 33,
+            "rounding_parameter": 4,
+            "rows": 3
+          },
+          "sigma_squared": {
+            "value": "128762737344"
+          }
+        },
+        {
+          "auxiliary": {
+            "columns": 10,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "256"
+            },
+            "m_bar": 1,
+            "rounding_parameter": 4,
+            "rows": 1
+          },
+          "keyset": 2,
+          "master": {
+            "columns": 60,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "512"
+            },
+            "m_bar": 33,
+            "rounding_parameter": 4,
+            "rows": 3
+          },
+          "sigma_squared": {
+            "value": "123271124480"
+          }
+        }
+      ],
+      "parameters": {
+        "k": 5,
+        "m": 10,
+        "n": 1,
+        "q": 257,
+        "t": 3
+      },
+      "passed": true,
+      "recovery_set_attempts": {
+        "[0, 1, 2]": 300,
+        "[0, 1, 3]": 300,
+        "[0, 1, 4]": 300,
+        "[0, 2, 3]": 300,
+        "[0, 2, 4]": 300,
+        "[0, 3, 4]": 300,
+        "[1, 2, 3]": 300,
+        "[1, 2, 4]": 300,
+        "[1, 3, 4]": 300,
+        "[2, 3, 4]": 300
+      }
+    },
+    {
+      "counts": {
+        "errors_by_phase_and_reason": {},
+        "issuance_attempts": 30,
+        "norm_failures": 0,
+        "partial_sampling_attempts": 15000,
+        "reconstruction_attempts": 3000,
+        "reconstruction_failures": 0,
+        "reconstruction_successes": 3000,
+        "setup_attempts": 3,
+        "skipped_reconstructions": 0
+      },
+      "key_profiles": [
+        {
+          "auxiliary": {
+            "columns": 10,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "256"
+            },
+            "m_bar": 1,
+            "rounding_parameter": 4,
+            "rows": 1
+          },
+          "keyset": 0,
+          "master": {
+            "columns": 100,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "512"
+            },
+            "m_bar": 55,
+            "rounding_parameter": 4,
+            "rows": 5
+          },
+          "sigma_squared": {
+            "value": "247354223744"
+          }
+        },
+        {
+          "auxiliary": {
+            "columns": 10,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "256"
+            },
+            "m_bar": 1,
+            "rounding_parameter": 4,
+            "rows": 1
+          },
+          "keyset": 1,
+          "master": {
+            "columns": 100,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "512"
+            },
+            "m_bar": 55,
+            "rounding_parameter": 4,
+            "rows": 5
+          },
+          "sigma_squared": {
+            "value": "219272194368"
+          }
+        },
+        {
+          "auxiliary": {
+            "columns": 10,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "256"
+            },
+            "m_bar": 1,
+            "rounding_parameter": 4,
+            "rows": 1
+          },
+          "keyset": 2,
+          "master": {
+            "columns": 100,
+            "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+            "gadget_length": 9,
+            "initial_width": {
+              "value": "512"
+            },
+            "m_bar": 55,
+            "rounding_parameter": 4,
+            "rows": 5
+          },
+          "sigma_squared": {
+            "value": "212536581696"
+          }
+        }
+      ],
+      "parameters": {
+        "k": 10,
+        "m": 10,
+        "n": 1,
+        "q": 257,
+        "t": 5
+      },
+      "passed": true,
+      "recovery_set_attempts": {
+        "[0, 1, 2, 3, 4]": 12,
+        "[0, 1, 2, 3, 5]": 12,
+        "[0, 1, 2, 3, 6]": 12,
+        "[0, 1, 2, 3, 7]": 12,
+        "[0, 1, 2, 3, 8]": 12,
+        "[0, 1, 2, 3, 9]": 12,
+        "[0, 1, 2, 4, 5]": 12,
+        "[0, 1, 2, 4, 6]": 12,
+        "[0, 1, 2, 4, 7]": 12,
+        "[0, 1, 2, 4, 8]": 12,
+        "[0, 1, 2, 4, 9]": 12,
+        "[0, 1, 2, 5, 6]": 12,
+        "[0, 1, 2, 5, 7]": 12,
+        "[0, 1, 2, 5, 8]": 12,
+        "[0, 1, 2, 5, 9]": 12,
+        "[0, 1, 2, 6, 7]": 12,
+        "[0, 1, 2, 6, 8]": 12,
+        "[0, 1, 2, 6, 9]": 12,
+        "[0, 1, 2, 7, 8]": 12,
+        "[0, 1, 2, 7, 9]": 12,
+        "[0, 1, 2, 8, 9]": 12,
+        "[0, 1, 3, 4, 5]": 12,
+        "[0, 1, 3, 4, 6]": 12,
+        "[0, 1, 3, 4, 7]": 12,
+        "[0, 1, 3, 4, 8]": 12,
+        "[0, 1, 3, 4, 9]": 12,
+        "[0, 1, 3, 5, 6]": 12,
+        "[0, 1, 3, 5, 7]": 12,
+        "[0, 1, 3, 5, 8]": 12,
+        "[0, 1, 3, 5, 9]": 12,
+        "[0, 1, 3, 6, 7]": 12,
+        "[0, 1, 3, 6, 8]": 12,
+        "[0, 1, 3, 6, 9]": 12,
+        "[0, 1, 3, 7, 8]": 12,
+        "[0, 1, 3, 7, 9]": 12,
+        "[0, 1, 3, 8, 9]": 12,
+        "[0, 1, 4, 5, 6]": 12,
+        "[0, 1, 4, 5, 7]": 12,
+        "[0, 1, 4, 5, 8]": 12,
+        "[0, 1, 4, 5, 9]": 12,
+        "[0, 1, 4, 6, 7]": 12,
+        "[0, 1, 4, 6, 8]": 12,
+        "[0, 1, 4, 6, 9]": 12,
+        "[0, 1, 4, 7, 8]": 12,
+        "[0, 1, 4, 7, 9]": 12,
+        "[0, 1, 4, 8, 9]": 12,
+        "[0, 1, 5, 6, 7]": 12,
+        "[0, 1, 5, 6, 8]": 12,
+        "[0, 1, 5, 6, 9]": 12,
+        "[0, 1, 5, 7, 8]": 12,
+        "[0, 1, 5, 7, 9]": 12,
+        "[0, 1, 5, 8, 9]": 12,
+        "[0, 1, 6, 7, 8]": 12,
+        "[0, 1, 6, 7, 9]": 12,
+        "[0, 1, 6, 8, 9]": 12,
+        "[0, 1, 7, 8, 9]": 12,
+        "[0, 2, 3, 4, 5]": 12,
+        "[0, 2, 3, 4, 6]": 12,
+        "[0, 2, 3, 4, 7]": 12,
+        "[0, 2, 3, 4, 8]": 12,
+        "[0, 2, 3, 4, 9]": 12,
+        "[0, 2, 3, 5, 6]": 12,
+        "[0, 2, 3, 5, 7]": 12,
+        "[0, 2, 3, 5, 8]": 12,
+        "[0, 2, 3, 5, 9]": 12,
+        "[0, 2, 3, 6, 7]": 12,
+        "[0, 2, 3, 6, 8]": 12,
+        "[0, 2, 3, 6, 9]": 12,
+        "[0, 2, 3, 7, 8]": 12,
+        "[0, 2, 3, 7, 9]": 12,
+        "[0, 2, 3, 8, 9]": 12,
+        "[0, 2, 4, 5, 6]": 12,
+        "[0, 2, 4, 5, 7]": 12,
+        "[0, 2, 4, 5, 8]": 12,
+        "[0, 2, 4, 5, 9]": 12,
+        "[0, 2, 4, 6, 7]": 12,
+        "[0, 2, 4, 6, 8]": 12,
+        "[0, 2, 4, 6, 9]": 12,
+        "[0, 2, 4, 7, 8]": 12,
+        "[0, 2, 4, 7, 9]": 12,
+        "[0, 2, 4, 8, 9]": 12,
+        "[0, 2, 5, 6, 7]": 12,
+        "[0, 2, 5, 6, 8]": 12,
+        "[0, 2, 5, 6, 9]": 12,
+        "[0, 2, 5, 7, 8]": 12,
+        "[0, 2, 5, 7, 9]": 12,
+        "[0, 2, 5, 8, 9]": 12,
+        "[0, 2, 6, 7, 8]": 12,
+        "[0, 2, 6, 7, 9]": 12,
+        "[0, 2, 6, 8, 9]": 12,
+        "[0, 2, 7, 8, 9]": 12,
+        "[0, 3, 4, 5, 6]": 12,
+        "[0, 3, 4, 5, 7]": 12,
+        "[0, 3, 4, 5, 8]": 12,
+        "[0, 3, 4, 5, 9]": 12,
+        "[0, 3, 4, 6, 7]": 12,
+        "[0, 3, 4, 6, 8]": 12,
+        "[0, 3, 4, 6, 9]": 12,
+        "[0, 3, 4, 7, 8]": 12,
+        "[0, 3, 4, 7, 9]": 12,
+        "[0, 3, 4, 8, 9]": 12,
+        "[0, 3, 5, 6, 7]": 12,
+        "[0, 3, 5, 6, 8]": 12,
+        "[0, 3, 5, 6, 9]": 12,
+        "[0, 3, 5, 7, 8]": 12,
+        "[0, 3, 5, 7, 9]": 12,
+        "[0, 3, 5, 8, 9]": 12,
+        "[0, 3, 6, 7, 8]": 12,
+        "[0, 3, 6, 7, 9]": 12,
+        "[0, 3, 6, 8, 9]": 12,
+        "[0, 3, 7, 8, 9]": 12,
+        "[0, 4, 5, 6, 7]": 12,
+        "[0, 4, 5, 6, 8]": 12,
+        "[0, 4, 5, 6, 9]": 12,
+        "[0, 4, 5, 7, 8]": 12,
+        "[0, 4, 5, 7, 9]": 12,
+        "[0, 4, 5, 8, 9]": 12,
+        "[0, 4, 6, 7, 8]": 12,
+        "[0, 4, 6, 7, 9]": 12,
+        "[0, 4, 6, 8, 9]": 12,
+        "[0, 4, 7, 8, 9]": 12,
+        "[0, 5, 6, 7, 8]": 12,
+        "[0, 5, 6, 7, 9]": 12,
+        "[0, 5, 6, 8, 9]": 12,
+        "[0, 5, 7, 8, 9]": 12,
+        "[0, 6, 7, 8, 9]": 12,
+        "[1, 2, 3, 4, 5]": 12,
+        "[1, 2, 3, 4, 6]": 12,
+        "[1, 2, 3, 4, 7]": 12,
+        "[1, 2, 3, 4, 8]": 12,
+        "[1, 2, 3, 4, 9]": 12,
+        "[1, 2, 3, 5, 6]": 12,
+        "[1, 2, 3, 5, 7]": 12,
+        "[1, 2, 3, 5, 8]": 12,
+        "[1, 2, 3, 5, 9]": 12,
+        "[1, 2, 3, 6, 7]": 12,
+        "[1, 2, 3, 6, 8]": 12,
+        "[1, 2, 3, 6, 9]": 12,
+        "[1, 2, 3, 7, 8]": 12,
+        "[1, 2, 3, 7, 9]": 12,
+        "[1, 2, 3, 8, 9]": 12,
+        "[1, 2, 4, 5, 6]": 12,
+        "[1, 2, 4, 5, 7]": 12,
+        "[1, 2, 4, 5, 8]": 12,
+        "[1, 2, 4, 5, 9]": 12,
+        "[1, 2, 4, 6, 7]": 12,
+        "[1, 2, 4, 6, 8]": 12,
+        "[1, 2, 4, 6, 9]": 12,
+        "[1, 2, 4, 7, 8]": 12,
+        "[1, 2, 4, 7, 9]": 12,
+        "[1, 2, 4, 8, 9]": 12,
+        "[1, 2, 5, 6, 7]": 12,
+        "[1, 2, 5, 6, 8]": 12,
+        "[1, 2, 5, 6, 9]": 12,
+        "[1, 2, 5, 7, 8]": 12,
+        "[1, 2, 5, 7, 9]": 12,
+        "[1, 2, 5, 8, 9]": 12,
+        "[1, 2, 6, 7, 8]": 12,
+        "[1, 2, 6, 7, 9]": 12,
+        "[1, 2, 6, 8, 9]": 12,
+        "[1, 2, 7, 8, 9]": 12,
+        "[1, 3, 4, 5, 6]": 12,
+        "[1, 3, 4, 5, 7]": 12,
+        "[1, 3, 4, 5, 8]": 12,
+        "[1, 3, 4, 5, 9]": 12,
+        "[1, 3, 4, 6, 7]": 12,
+        "[1, 3, 4, 6, 8]": 12,
+        "[1, 3, 4, 6, 9]": 12,
+        "[1, 3, 4, 7, 8]": 12,
+        "[1, 3, 4, 7, 9]": 12,
+        "[1, 3, 4, 8, 9]": 12,
+        "[1, 3, 5, 6, 7]": 12,
+        "[1, 3, 5, 6, 8]": 12,
+        "[1, 3, 5, 6, 9]": 12,
+        "[1, 3, 5, 7, 8]": 12,
+        "[1, 3, 5, 7, 9]": 12,
+        "[1, 3, 5, 8, 9]": 12,
+        "[1, 3, 6, 7, 8]": 12,
+        "[1, 3, 6, 7, 9]": 12,
+        "[1, 3, 6, 8, 9]": 12,
+        "[1, 3, 7, 8, 9]": 12,
+        "[1, 4, 5, 6, 7]": 12,
+        "[1, 4, 5, 6, 8]": 12,
+        "[1, 4, 5, 6, 9]": 12,
+        "[1, 4, 5, 7, 8]": 12,
+        "[1, 4, 5, 7, 9]": 12,
+        "[1, 4, 5, 8, 9]": 12,
+        "[1, 4, 6, 7, 8]": 12,
+        "[1, 4, 6, 7, 9]": 12,
+        "[1, 4, 6, 8, 9]": 12,
+        "[1, 4, 7, 8, 9]": 12,
+        "[1, 5, 6, 7, 8]": 12,
+        "[1, 5, 6, 7, 9]": 12,
+        "[1, 5, 6, 8, 9]": 12,
+        "[1, 5, 7, 8, 9]": 12,
+        "[1, 6, 7, 8, 9]": 12,
+        "[2, 3, 4, 5, 6]": 12,
+        "[2, 3, 4, 5, 7]": 12,
+        "[2, 3, 4, 5, 8]": 12,
+        "[2, 3, 4, 5, 9]": 12,
+        "[2, 3, 4, 6, 7]": 12,
+        "[2, 3, 4, 6, 8]": 12,
+        "[2, 3, 4, 6, 9]": 12,
+        "[2, 3, 4, 7, 8]": 12,
+        "[2, 3, 4, 7, 9]": 12,
+        "[2, 3, 4, 8, 9]": 12,
+        "[2, 3, 5, 6, 7]": 12,
+        "[2, 3, 5, 6, 8]": 12,
+        "[2, 3, 5, 6, 9]": 12,
+        "[2, 3, 5, 7, 8]": 12,
+        "[2, 3, 5, 7, 9]": 12,
+        "[2, 3, 5, 8, 9]": 12,
+        "[2, 3, 6, 7, 8]": 12,
+        "[2, 3, 6, 7, 9]": 12,
+        "[2, 3, 6, 8, 9]": 12,
+        "[2, 3, 7, 8, 9]": 12,
+        "[2, 4, 5, 6, 7]": 12,
+        "[2, 4, 5, 6, 8]": 12,
+        "[2, 4, 5, 6, 9]": 12,
+        "[2, 4, 5, 7, 8]": 12,
+        "[2, 4, 5, 7, 9]": 12,
+        "[2, 4, 5, 8, 9]": 12,
+        "[2, 4, 6, 7, 8]": 12,
+        "[2, 4, 6, 7, 9]": 12,
+        "[2, 4, 6, 8, 9]": 12,
+        "[2, 4, 7, 8, 9]": 12,
+        "[2, 5, 6, 7, 8]": 12,
+        "[2, 5, 6, 7, 9]": 12,
+        "[2, 5, 6, 8, 9]": 12,
+        "[2, 5, 7, 8, 9]": 12,
+        "[2, 6, 7, 8, 9]": 12,
+        "[3, 4, 5, 6, 7]": 12,
+        "[3, 4, 5, 6, 8]": 12,
+        "[3, 4, 5, 6, 9]": 12,
+        "[3, 4, 5, 7, 8]": 12,
+        "[3, 4, 5, 7, 9]": 12,
+        "[3, 4, 5, 8, 9]": 12,
+        "[3, 4, 6, 7, 8]": 12,
+        "[3, 4, 6, 7, 9]": 12,
+        "[3, 4, 6, 8, 9]": 12,
+        "[3, 4, 7, 8, 9]": 12,
+        "[3, 5, 6, 7, 8]": 12,
+        "[3, 5, 6, 7, 9]": 12,
+        "[3, 5, 6, 8, 9]": 12,
+        "[3, 5, 7, 8, 9]": 9,
+        "[3, 6, 7, 8, 9]": 9,
+        "[4, 5, 6, 7, 8]": 9,
+        "[4, 5, 6, 7, 9]": 9,
+        "[4, 5, 6, 8, 9]": 9,
+        "[4, 5, 7, 8, 9]": 9,
+        "[4, 6, 7, 8, 9]": 9,
+        "[5, 6, 7, 8, 9]": 9
+      }
+    }
+  ],
+  "rounds_per_keyset": 1000,
+  "scope": "A1-A4 engineering acceptance for the selected ternary MP12 instance; not sampling-distribution or security certification",
+  "snapshot_date": "2026-11-13",
+  "source_sha256": {
+    "src/primitive/plt.rs": "209764c969f4b1d83901f72ff6c3fcfee433ae9d78ab6f2aae51db7994a99c56",
+    "src/primitive/plt/params.rs": "7492572f4cb29a4e39619412996996afb1735f57e12c9faf21ac3bb767b333d4",
+    "src/primitive/plt/vandermonde.rs": "b51484657a242e4b4e627f43474170dd547ce400766a01c67b3fb440ae01b446",
+    "src/primitive/plt/mp12_adapter.rs": "f89ea47174ca5db40fc100e8c3de83ae20a36c9b05bd827f8b69a31dfffad911",
+    "src/primitive/plt/acceptance_tests.rs": "5ac329ecaecb51f629fd0bf659060631c23758e0486892755a3c5e4cf31f834a",
+    "src/primitive/psf/mp_perturbation.rs": "e0755886bae2bbc4f6f4c0f248e3713ae0f2d9e2f86a441a337df75a94d348e6",
+    "src/primitive/psf/mp_perturbation/checked.rs": "14876be1a30a25e0f271680656b866b4063b30c124a25693cc334a306d6dcb31",
+    "tests/plt_correctness.rs": "4c0c406690b2711868f700ce153f88d904f6c566cd82a9861a95d3dd03235c38",
+    "examples/plt.rs": "503cd02321f2b0257c1de9b269cef1e64bd194ce5421833c1350f3be7f10098f",
+    "examples/plt_acceptance.rs": "81d5afcc447efa9bc56cbc642f9a14bb1de48299584aa6b33665525642baeae9",
+    "scripts/verify_plt_report.py": "90205aad88e94aa8e023b6958c21d1a972008984f4411b3488f5c1237ab3619a",
+    "Cargo.lock": "47b5f7249c821c87445bec479cb278ab55dc995e28a45307c800325a837a5e2f"
+  },
+  "evidence_scope": "A-class engineering contract for ternary MP12; PLT Definition 2/Lemma 13 security compatibility remains B1-B3 pending"
+}

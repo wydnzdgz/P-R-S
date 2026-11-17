@@ -1,0 +1,386 @@
+{
+  "date": "2026-11-17T13:03:53.263187+08:00",
+  "migration_manifest": "docs/workspace_migration_manifest.json",
+  "rust_tests": {
+    "baseline_unit": 90,
+    "plt_unit": 7,
+    "plt_integration": 9,
+    "example": 7,
+    "baseline_doctest": 50,
+    "plt_doctest": 1,
+    "total": 164,
+    "passed": true
+  },
+  "checks_passed": [
+    "cargo check --workspace --all-targets --offline",
+    "cargo test --locked --workspace --lib --tests --examples",
+    "cargo test --locked --workspace --doc",
+    "cargo clippy --locked --workspace --all-targets -- -D warnings",
+    "cargo bench --locked --workspace --no-run",
+    "RUSTDOCFLAGS=-Dwarnings cargo doc --locked --workspace --no-deps",
+    "Python known-answer/tampering unit tests (2)",
+    "Independent historic B audit and parameter/lattice report verification",
+    "Workflow YAML parse and explicit workspace/locked flags",
+    "cargo fmt --all -- --check",
+    "git diff --check"
+  ],
+  "integer_flow_checks": [
+    {
+      "t": 2,
+      "k": 3,
+      "recovery_sets": 3,
+      "trials_per_set": 3,
+      "independently_verified_reconstructions": 9
+    },
+    {
+      "t": 3,
+      "k": 5,
+      "recovery_sets": 10,
+      "trials_per_set": 3,
+      "independently_verified_reconstructions": 30
+    },
+    {
+      "t": 5,
+      "k": 10,
+      "recovery_sets": 252,
+      "trials_per_set": 3,
+      "independently_verified_reconstructions": 756
+    }
+  ],
+  "repeated_acceptance": {
+    "rounds_per_keyset": 20,
+    "keysets_per_configuration": 2,
+    "reports": [
+      {
+        "counts": {
+          "errors_by_phase_and_reason": {},
+          "issuance_attempts": 6,
+          "norm_failures": 0,
+          "partial_sampling_attempts": 80,
+          "reconstruction_attempts": 40,
+          "reconstruction_failures": 0,
+          "reconstruction_successes": 40,
+          "setup_attempts": 2,
+          "skipped_reconstructions": 0
+        },
+        "key_profiles": [
+          {
+            "auxiliary": {
+              "columns": 10,
+              "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+              "gadget_length": 9,
+              "initial_width": {
+                "value": "256"
+              },
+              "m_bar": 1,
+              "rounding_parameter": 4,
+              "rows": 1
+            },
+            "keyset": 0,
+            "master": {
+              "columns": 40,
+              "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+              "gadget_length": 9,
+              "initial_width": {
+                "value": "256"
+              },
+              "m_bar": 22,
+              "rounding_parameter": 4,
+              "rows": 2
+            },
+            "sigma_squared": {
+              "value": "20000831040"
+            }
+          },
+          {
+            "auxiliary": {
+              "columns": 10,
+              "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+              "gadget_length": 9,
+              "initial_width": {
+                "value": "256"
+              },
+              "m_bar": 1,
+              "rounding_parameter": 4,
+              "rows": 1
+            },
+            "keyset": 1,
+            "master": {
+              "columns": 40,
+              "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+              "gadget_length": 9,
+              "initial_width": {
+                "value": "256"
+              },
+              "m_bar": 22,
+              "rounding_parameter": 4,
+              "rows": 2
+            },
+            "sigma_squared": {
+              "value": "20243719936"
+            }
+          }
+        ],
+        "parameters": {
+          "k": 3,
+          "m": 10,
+          "n": 1,
+          "q": 257,
+          "t": 2
+        },
+        "passed": true,
+        "recovery_set_attempts": {
+          "[0, 1]": 14,
+          "[0, 2]": 14,
+          "[1, 2]": 12
+        }
+      },
+      {
+        "counts": {
+          "errors_by_phase_and_reason": {},
+          "issuance_attempts": 10,
+          "norm_failures": 0,
+          "partial_sampling_attempts": 120,
+          "reconstruction_attempts": 40,
+          "reconstruction_failures": 0,
+          "reconstruction_successes": 40,
+          "setup_attempts": 2,
+          "skipped_reconstructions": 0
+        },
+        "key_profiles": [
+          {
+            "auxiliary": {
+              "columns": 10,
+              "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+              "gadget_length": 9,
+              "initial_width": {
+                "value": "256"
+              },
+              "m_bar": 1,
+              "rounding_parameter": 4,
+              "rows": 1
+            },
+            "keyset": 0,
+            "master": {
+              "columns": 60,
+              "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+              "gadget_length": 9,
+              "initial_width": {
+                "value": "512"
+              },
+              "m_bar": 33,
+              "rounding_parameter": 4,
+              "rows": 3
+            },
+            "sigma_squared": {
+              "value": "139945892864"
+            }
+          },
+          {
+            "auxiliary": {
+              "columns": 10,
+              "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+              "gadget_length": 9,
+              "initial_width": {
+                "value": "256"
+              },
+              "m_bar": 1,
+              "rounding_parameter": 4,
+              "rows": 1
+            },
+            "keyset": 1,
+            "master": {
+              "columns": 60,
+              "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+              "gadget_length": 9,
+              "initial_width": {
+                "value": "512"
+              },
+              "m_bar": 33,
+              "rounding_parameter": 4,
+              "rows": 3
+            },
+            "sigma_squared": {
+              "value": "115567138496"
+            }
+          }
+        ],
+        "parameters": {
+          "k": 5,
+          "m": 10,
+          "n": 1,
+          "q": 257,
+          "t": 3
+        },
+        "passed": true,
+        "recovery_set_attempts": {
+          "[0, 1, 2]": 4,
+          "[0, 1, 3]": 4,
+          "[0, 1, 4]": 4,
+          "[0, 2, 3]": 4,
+          "[0, 2, 4]": 4,
+          "[0, 3, 4]": 4,
+          "[1, 2, 3]": 4,
+          "[1, 2, 4]": 4,
+          "[1, 3, 4]": 4,
+          "[2, 3, 4]": 4
+        }
+      },
+      {
+        "counts": {
+          "errors_by_phase_and_reason": {},
+          "issuance_attempts": 20,
+          "norm_failures": 0,
+          "partial_sampling_attempts": 200,
+          "reconstruction_attempts": 40,
+          "reconstruction_failures": 0,
+          "reconstruction_successes": 40,
+          "setup_attempts": 2,
+          "skipped_reconstructions": 0
+        },
+        "key_profiles": [
+          {
+            "auxiliary": {
+              "columns": 10,
+              "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+              "gadget_length": 9,
+              "initial_width": {
+                "value": "256"
+              },
+              "m_bar": 1,
+              "rounding_parameter": 4,
+              "rows": 1
+            },
+            "keyset": 0,
+            "master": {
+              "columns": 100,
+              "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+              "gadget_length": 9,
+              "initial_width": {
+                "value": "512"
+              },
+              "m_bar": 55,
+              "rounding_parameter": 4,
+              "rows": 5
+            },
+            "sigma_squared": {
+              "value": "247110380608"
+            }
+          },
+          {
+            "auxiliary": {
+              "columns": 10,
+              "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+              "gadget_length": 9,
+              "initial_width": {
+                "value": "256"
+              },
+              "m_bar": 1,
+              "rounding_parameter": 4,
+              "rows": 1
+            },
+            "keyset": 1,
+            "master": {
+              "columns": 100,
+              "distribution": "MP12 PlusMinusOneZero: P(-1)=1/4, P(0)=1/2, P(1)=1/4",
+              "gadget_length": 9,
+              "initial_width": {
+                "value": "512"
+              },
+              "m_bar": 55,
+              "rounding_parameter": 4,
+              "rows": 5
+            },
+            "sigma_squared": {
+              "value": "205174337536"
+            }
+          }
+        ],
+        "parameters": {
+          "k": 10,
+          "m": 10,
+          "n": 1,
+          "q": 257,
+          "t": 5
+        },
+        "passed": true,
+        "recovery_set_attempts": {
+          "[0, 1, 2, 3, 4]": 2,
+          "[0, 1, 2, 3, 5]": 2,
+          "[0, 1, 2, 3, 6]": 2,
+          "[0, 1, 2, 3, 7]": 2,
+          "[0, 1, 2, 3, 8]": 2,
+          "[0, 1, 2, 3, 9]": 2,
+          "[0, 1, 2, 4, 5]": 2,
+          "[0, 1, 2, 4, 6]": 2,
+          "[0, 1, 2, 4, 7]": 2,
+          "[0, 1, 2, 4, 8]": 2,
+          "[0, 1, 2, 4, 9]": 2,
+          "[0, 1, 2, 5, 6]": 2,
+          "[0, 1, 2, 5, 7]": 2,
+          "[0, 1, 2, 5, 8]": 2,
+          "[0, 1, 2, 5, 9]": 2,
+          "[0, 1, 2, 6, 7]": 2,
+          "[0, 1, 2, 6, 8]": 2,
+          "[0, 1, 2, 6, 9]": 2,
+          "[0, 1, 2, 7, 8]": 2,
+          "[0, 1, 2, 7, 9]": 2
+        }
+      }
+    ],
+    "passed": true
+  },
+  "sampling_audit": {
+    "plt_partial_samples": 27000,
+    "small_reference_samples": 20000,
+    "numerical_diagnostics": 54,
+    "errors": [],
+    "engineering_screening_passed": true,
+    "protocol_parameters_passed": false,
+    "stage_b_fully_passed": false
+  },
+  "parameter_probes": [
+    {
+      "case": "n1_q257_2of3",
+      "status": "completed",
+      "completed_trials": 3
+    },
+    {
+      "case": "n2_q2147483647_3of5",
+      "status": "completed",
+      "completed_trials": 3
+    }
+  ],
+  "public_lattice_screens": [
+    {
+      "case": "n1_q257_2of3",
+      "accepted": true,
+      "norm_squared": {
+        "value": "9"
+      }
+    },
+    {
+      "case": "n2_q2147483647_3of5",
+      "accepted": true,
+      "norm_squared": {
+        "value": "557389"
+      }
+    }
+  ],
+  "raw_artifacts_sha256": {
+    "target/workspace_migration/acceptance.json": "e0dcad5368bd7ad889bf165520cb09690936c8545828d8f794aecafca6a99db6",
+    "target/workspace_migration/legacy.json": "39e7a8339982e739938306e538fa8965907c9e2a144e5df69ba8476bbeda9cc5",
+    "target/workspace_migration/parameters.json": "511daa9fdc39c257c38b61e27d0b65e81b3af28cd77a08fd1d848ec5d1551012",
+    "target/workspace_migration/plt_2of3.json": "5939ed0e55777f2dfb2ec90638a140919571530496ee0a5ffd12e5c5374816a5",
+    "target/workspace_migration/plt_3of5.json": "d02dcc722da9368ded5b08349867c9b6ae7da399ff4cb3ed54cd164c9a750e48",
+    "target/workspace_migration/plt_5of10.json": "e7430fed72891e69135e94c4aefbbda10020804f3b69b7cbbe59937ff34f8bc7",
+    "target/workspace_migration/probes/n1_q257_2of3.json": "b1d457a32c33779952071561ab01cbfb54eee5a109ec6f138b003c7c2a0385f3",
+    "target/workspace_migration/probes/n2_q2147483647_3of5.json": "f103aca5e5ca6898dbc1241a2a4a9c7179e08d308e53563c2f687e86c071f3cd",
+    "target/workspace_migration/public_lattice_screen.json": "fbc280caaea67b8ca7a3fe56187d59005ba83f003655ff57efaf194947a02caf",
+    "target/workspace_migration/sampling_B.json": "42c3e8cb3a2d6d8873a2ed096473e149dc04cd89f4d428f71e3e6ed4cdded1ec",
+    "target/workspace_migration/script_build_path.json": "99b2d52af8e52227d4bfcfc8e1495b9874a880683459d87ac132ecb8952bfb33",
+    "target/workspace_migration/script_build_probes/n1_q257_2of3.json": "b07b9a9b88d890bb174ec5ad62e229a7173ca559947ced0896ead7217086dd5d"
+  },
+  "hosted_ci_executed": false,
+  "protocol_security_approved": false
+}

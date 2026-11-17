@@ -1,0 +1,106 @@
+{
+  "input_report": "docs/plt_parameter_exploration_results.json",
+  "security_bit_target": null,
+  "results": [
+    {
+      "case": "n1_q257_2of3",
+      "total_pairs": 780,
+      "invertible_pairs": 778,
+      "accepted_pairs": 778,
+      "minimum_norm_squared": "34",
+      "beta_squared": "3072034693120",
+      "minimum_witness": {
+        "columns": [
+          17,
+          36
+        ],
+        "integer_entries": [
+          -3,
+          5
+        ]
+      },
+      "elapsed_seconds": 0.0005884389975108206,
+      "scope": "all two-column pivot solutions for one saved public A,y; does not cover arbitrary integer solutions"
+    },
+    {
+      "case": "n1_q65537_2of3",
+      "total_pairs": 2556,
+      "invertible_pairs": 2556,
+      "accepted_pairs": 2556,
+      "minimum_norm_squared": "748377",
+      "beta_squared": "139029391687680",
+      "minimum_witness": {
+        "columns": [
+          3,
+          32
+        ],
+        "integer_entries": [
+          861,
+          84
+        ]
+      },
+      "elapsed_seconds": 0.0023960580001585186,
+      "scope": "all two-column pivot solutions for one saved public A,y; does not cover arbitrary integer solutions"
+    },
+    {
+      "case": "n1_q16777213_2of3",
+      "total_pairs": 4950,
+      "invertible_pairs": 4950,
+      "accepted_pairs": 4950,
+      "minimum_norm_squared": "3109525000",
+      "beta_squared": "541090562969600",
+      "minimum_witness": {
+        "columns": [
+          8,
+          82
+        ],
+        "integer_entries": [
+          -37850,
+          40950
+        ]
+      },
+      "elapsed_seconds": 0.0054561150027439,
+      "scope": "all two-column pivot solutions for one saved public A,y; does not cover arbitrary integer solutions"
+    },
+    {
+      "case": "n1_q2147483647_2of3",
+      "total_pairs": 8128,
+      "invertible_pairs": 8128,
+      "accepted_pairs": 21,
+      "minimum_norm_squared": "204761901260168",
+      "beta_squared": "5404422441402368",
+      "minimum_witness": {
+        "columns": [
+          37,
+          108
+        ],
+        "integer_entries": [
+          8583442,
+          11449298
+        ]
+      },
+      "elapsed_seconds": 0.013093999004922807,
+      "scope": "all two-column pivot solutions for one saved public A,y; does not cover arbitrary integer solutions"
+    },
+    {
+      "case": "n1_q2305843009213693951_2of3",
+      "total_pairs": 30628,
+      "invertible_pairs": 30628,
+      "accepted_pairs": 0,
+      "minimum_norm_squared": "59883757887686246694306751380538",
+      "beta_squared": "284757166030934016",
+      "minimum_witness": {
+        "columns": [
+          70,
+          236
+        ],
+        "integer_entries": [
+          7655909324772553,
+          1127302221476973
+        ]
+      },
+      "elapsed_seconds": 0.08052395802224055,
+      "scope": "all two-column pivot solutions for one saved public A,y; does not cover arbitrary integer solutions"
+    }
+  ]
+}

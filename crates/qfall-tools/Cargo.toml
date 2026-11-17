@@ -1,0 +1,28 @@
+[package]
+name = "qfall-tools"
+version = "0.2.0"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Common sub-modules and procedures in lattice-based constructions"
+readme = "README.md"
+homepage = "https://qfall.github.io"
+repository = "https://github.com/qfall/tools"
+keywords = ["prototype", "lattice", "cryptography"]
+categories = ["cryptography", "mathematics", "development-tools::build-utils", "development-tools::testing", "development-tools::profiling"]
+autobenches = false
+
+[dependencies]
+qfall-math.workspace = true
+flint3-sys.workspace = true
+rand.workspace = true
+rand_distr.workspace = true
+serde.workspace = true
+typetag.workspace = true
+
+[dev-dependencies]
+criterion.workspace = true
+
+[[bench]]
+name = "benchmarks"
+harness = false
